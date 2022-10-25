@@ -1,6 +1,6 @@
 namespace Ecommerce.API.Models
 {
-    public class Customer : Entity 
+    public class Merchant : Entity
     {
         public string Name { get; private set; }
         public string Document { get; private set; }
@@ -9,6 +9,4 @@ namespace Ecommerce.API.Models
         public string Password { get; private set; }
         public string Role { get; private set; }
     }
-
-    
 }
