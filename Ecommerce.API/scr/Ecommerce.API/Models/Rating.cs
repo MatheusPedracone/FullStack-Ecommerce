@@ -1,6 +1,6 @@
 namespace Ecommerce.API.Models
 {
-    public class Rating
+    public class Rating : Entity 
     {
         public int Note { get; private set; }
         public string Comments { get; private set; }
