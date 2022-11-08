@@ -8,6 +8,7 @@ namespace Ecommerce.API.Data
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
         public DbSet<Customer> Customers { get; set; }
+        public DbSet<Merchant> Merchants { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Establishment> Establishments { get; set; }
         public DbSet<ProductCategory> ProductCategories { get; set; }
