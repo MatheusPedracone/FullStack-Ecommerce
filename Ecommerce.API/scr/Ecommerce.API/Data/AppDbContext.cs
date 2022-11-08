@@ -7,11 +7,13 @@ namespace Ecommerce.API.Data
     {
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
+        public DbSet<Product> Products { get; set; }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Merchant> Merchants { get; set; }
-        public DbSet<Product> Products { get; set; }
         public DbSet<Establishment> Establishments { get; set; }
+        public DbSet<EstablishmentCategory> EstablishmentCategories { get; set; }
         public DbSet<ProductCategory> ProductCategories { get; set; }
+        public DbSet<Rating> Rating { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
